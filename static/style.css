@@ -267,9 +267,17 @@ nav ul li a:hover{
 }
 
 .python-icon{
-    width:40px;
-    height:40px;
-    object-fit:contain;
+    width:360px;
+    height:360px;
+    margin:auto;
+    border-radius:50%;
+    overflow:hidden;
+
+    box-shadow:
+        0 0 40px rgba(77,163,255,.25),
+        0 0 90px rgba(77,163,255,.15);
+
+    transition:0.4s ease;
 }
 
 /* ===========================
