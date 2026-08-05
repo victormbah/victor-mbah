@@ -154,8 +154,11 @@ nav ul li a:hover{
 }
 
 .hero h1{
-    font-size:58px;
-    line-height:1.1;
+
+    font-size:70px;
+
+    line-height:1;
+
     margin-bottom:15px;
 
 }
@@ -239,13 +242,21 @@ nav ul li a:hover{
 }
 
 .hero-image{
-    width:320px;
-    height:320px;
+
+    width:430px;
+
+    height:430px;
+
     margin:auto;
+
     border-radius:50%;
-    padding:6px;
+
+    padding:8px;
+
     background:linear-gradient(135deg,#4da3ff,#1e3cff);
-    box-shadow:0 15px 40px rgba(77,163,255,.25);
+
+    box-shadow:0 0 80px rgba(77,163,255,.45);
+
 }
 
 .hero-image img{
@@ -260,35 +271,86 @@ nav ul li a:hover{
 
 }
 
-@media (max-width: 900px){
+/* ===========================
+   JOURNEY / TIMELINE
+=========================== */
 
-    .hero{
-        grid-template-columns:1fr;
-        text-align:center;
-        gap:50px;
-        padding-top:120px;
-    }
+.journey{
+    padding:120px 10%;
+}
 
-    .hero-image{
-        width:250px;
-        height:250px;
-    }
+.section-heading{
+    text-align:center;
+    max-width:700px;
+    margin:0 auto 80px;
+}
 
-    .buttons{
-        justify-content:center;
-        flex-wrap:wrap;
-    }
+.section-heading h2{
+    font-size:48px;
+    margin:15px 0;
+}
 
-    .hero h1{
-        font-size:42px;
-    }
+.section-heading p{
+    color:#b8b8b8;
+    line-height:1.8;
+}
 
-    .hero h2{
-        font-size:20px;
-    }
+.timeline{
+    display:flex;
+    flex-direction:column;
+    gap:80px;
+}
 
-    .hero-description{
-        margin:auto;
-    }
+.timeline-card{
+    display:flex;
+    align-items:center;
+    gap:50px;
+}
+
+.timeline-card.reverse{
+    flex-direction:row-reverse;
+}
+
+.timeline-image{
+    flex:0 0 350px;   /* fixed width */
+}
+
+.timeline-image img{
+    width:100%;
+    height:400px;      /* fixed height */
+    object-fit:cover;  /* crop instead of stretching */
+    border-radius:20px;
+    box-shadow:0 15px 35px rgba(0,0,0,.35);
+}
+
+.timeline-text{
+    flex:1;
+}
+
+.timeline-text h3{
+    font-size:32px;
+    margin-bottom:20px;
+}
+
+.timeline-text p{
+    color:#b8b8b8;
+    line-height:1.9;
+}
+
+@media (max-width:900px){
+
+.timeline-card,
+.timeline-card.reverse{
+    flex-direction:column;
+}
+
+.timeline-image{
+    width:100%;
+    max-width:300px;
+}
+
+.timeline-image img{
+    height:320px;
+}
 
 }
