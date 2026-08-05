@@ -154,11 +154,8 @@ nav ul li a:hover{
 }
 
 .hero h1{
-
-    font-size:70px;
-
-    line-height:1;
-
+    font-size:58px;
+    line-height:1.1;
     margin-bottom:15px;
 
 }
@@ -242,21 +239,13 @@ nav ul li a:hover{
 }
 
 .hero-image{
-
-    width:430px;
-
-    height:430px;
-
+    width:320px;
+    height:320px;
     margin:auto;
-
     border-radius:50%;
-
-    padding:8px;
-
+    padding:6px;
     background:linear-gradient(135deg,#4da3ff,#1e3cff);
-
-    box-shadow:0 0 80px rgba(77,163,255,.45);
-
+    box-shadow:0 15px 40px rgba(77,163,255,.25);
 }
 
 .hero-image img{
@@ -268,5 +257,38 @@ nav ul li a:hover{
     height:100%;
 
     object-fit:cover;
+
+}
+
+@media (max-width: 900px){
+
+    .hero{
+        grid-template-columns:1fr;
+        text-align:center;
+        gap:50px;
+        padding-top:120px;
+    }
+
+    .hero-image{
+        width:250px;
+        height:250px;
+    }
+
+    .buttons{
+        justify-content:center;
+        flex-wrap:wrap;
+    }
+
+    .hero h1{
+        font-size:42px;
+    }
+
+    .hero h2{
+        font-size:20px;
+    }
+
+    .hero-description{
+        margin:auto;
+    }
 
 }
