@@ -1082,3 +1082,21 @@ header.scrolled{
         transition-duration:0.01ms !important;
     }
 }
+@media (max-width: 600px) {
+    header {
+        position: relative;
+    }
+
+    .hero {
+        padding-top: 65px;
+        min-height: auto;
+    }
+
+    .small-text {
+        display: block;
+        visibility: visible;
+        opacity: 1;
+        margin-top: 0;
+        margin-bottom: 15px;
+    }
+}
